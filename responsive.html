@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body{
+            border: 1px solid palevioletred;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        .image-container{
+            display: flex;
+            gap: 20px;
+        }
+        .image-container div{
+            width: 50%;
+        }
+        .image-container img{
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .image-container{
+                /* flex-direction: column; */
+                flex-direction: column-reverse;
+            }
+            .image-container div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Responsive Practice</h1>
+    <ol>
+        <li>Hello world</li>
+        <li>Hello world</li>
+        <li>Hello world</li>
+        <li>Hello world</li>
+        <li>Hello world</li>
+    </ol>
+    <div class="image-container">
+        <div><img src="images/food.jpg" alt=""></div>
+        <div><img src="images/tiger.jpg" alt=""></div>
+    </div>
+</body>
+</html>
