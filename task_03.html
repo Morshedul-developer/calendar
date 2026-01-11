@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice 03</title>
+    <style>
+      .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: grid;
+        gap: 25px;
+      }
+      .blog-1,
+      .blog-2 {
+        border: 1px solid slategray;
+        display: flex;
+        gap: 30px;
+        padding: 10px;
+      }
+      .container img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      .blog-image{
+        width: 40%;
+      }
+
+      @media screen and (max-width: 576px) {
+        .blog-1, .blog-2{
+            flex-direction: column;
+        }
+        .blog-image{
+            width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="blog-1">
+        <div class="blog-image">
+          <img src="images/rice.jpg" alt="" />
+        </div>
+        <div class="blog-des">
+          <h3>Fish with rice on plate</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            libero id iste, sunt nostrum sapiente illum animi cupiditate
+            accusamus sint sit recusandae tenetur facilis odit eveniet atque
+            repudiandae sed corrupti cum deleniti. Veniam, voluptatem vero.
+          </p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <div class="blog-2">
+        <div class="blog-image">
+          <img src="images/meat.jpg" alt="" />
+        </div>
+        <div class="blog-des">
+          <h3>Meal with meat on plate</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            libero id iste, sunt nostrum sapiente illum animi cupiditate
+            accusamus sint sit recusandae tenetur facilis odit eveniet atque
+            repudiandae sed corrupti cum deleniti. Veniam, voluptatem vero.
+          </p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
